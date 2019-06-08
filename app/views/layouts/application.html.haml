@@ -8,8 +8,11 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    %header
-      .header__barRow
-      %a{ href: 'http://localhost:3000/', id: 'top' }lubbock
+    .header
+      .header__siteTitle
+        %a{ href: 'http://localhost:3000/', id: 'top' }Lubbock
+      .header__image 
+      .header__button
+        %a{ href: '', id: 'header-button'}メェ〜ルする
 
     = yield
