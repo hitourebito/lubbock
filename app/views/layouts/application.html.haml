@@ -14,9 +14,9 @@
       .header__image 
       - if user_signed_in?
         .header__button
-          = link_to "メェ〜るする", destroy_user_session_path, method: :delete, class: 'header-button'
+          = link_to "メェ〜ルする", destroy_user_session_path, method: :delete, class: 'header-button'
         .header__button
-          = link_to "おやすみなさい", destroy_user_session_path, method: :delete, class: 'header-button'
+          = link_to "おやすみ", destroy_user_session_path, method: :delete, class: 'header-button'
         .header__message
           %p
           = current_user.name 
