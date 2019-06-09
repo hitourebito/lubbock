@@ -1,5 +1,5 @@
 .header{ 
-  height: 100px;
+  height: 110px;
   background-color: #583822;
 
   &__siteTitle {
@@ -7,10 +7,9 @@
 
     & a {
       color: white;
-      font-size: 50px;
+      font-size: 70px;
       text-decoration: none;
       background-repeat: no-repeat;
-      line-height: 100px;
     }
   }
   &__image {
@@ -19,7 +18,7 @@
     height: 100px;
     background-image: url("151014.jpg");
     background-repeat: no-repeat;
-    background-size: 90px;
+    background-size: 100px;
     border-radius: 45px;
   }
   &__button {
@@ -29,6 +28,14 @@
       text-decoration: none; 
       margin-left: 10px;
     }
+  }
+  &__message {
+    display: inline-block;
+    height: 100px;
+    float: right;
+    margin-right: 5px;
+    color: white;
+    border-style: dashed;
   }
 }
   
