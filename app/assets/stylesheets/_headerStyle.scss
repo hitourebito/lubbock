@@ -23,6 +23,13 @@
   }
   &__button {
     display: inline-block;
+
+    .fa.fa-envelope {
+      color: white;
+    }
+    .fa.fa-bed {
+      color: white;
+    }
     & a {
       color: white;
       text-decoration: none; 
