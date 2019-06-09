@@ -20,12 +20,14 @@
     background-image: url("151014.jpg");
     background-repeat: no-repeat;
     background-size: 90px;
+    border-radius: 45px;
   }
-  &__button1 {
+  &__button {
     display: inline-block;
     & a {
       color: white;
       text-decoration: none; 
+      margin-left: 10px;
     }
   }
 }
