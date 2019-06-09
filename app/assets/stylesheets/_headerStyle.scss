@@ -23,12 +23,20 @@
   }
   &__button {
     display: inline-block;
+    color: white;
+    border-style: solid;
 
     .fa.fa-envelope {
-      color: white;
+      margin-right: 5px;
+    }
+    .fa.fa-check-circle {
+      margin-right: 5px;
+    }
+    .fa.fa-comment {
+      margin-right: 5px;
     }
     .fa.fa-bed {
-      color: white;
+      margin-right: 5px;
     }
     & a {
       color: white;
@@ -40,6 +48,7 @@
     display: inline-block;
     height: 100px;
     float: right;
+    padding-left: 5px; 
     margin-right: 5px;
     color: white;
     border-style: dashed;

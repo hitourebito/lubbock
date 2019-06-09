@@ -14,10 +14,16 @@
       .header__image 
       - if user_signed_in?
         .header__button
-          = link_to "メェ〜ルする", destroy_user_session_path, method: :delete, class: 'header-button'
+          = link_to "メェ〜ルする", destroy_user_session_path, method: :delete
           %i.fa.fa-envelope
         .header__button
-          = link_to "おやすみ", destroy_user_session_path, method: :delete, class: 'header-button'
+          = link_to "マイマネージメェント", destroy_user_session_path, method: :delete
+          %i.fa.fa-check-circle
+        .header__button
+          = link_to "ジョンのメェ〜言", destroy_user_session_path, method: :delete
+          %i.fa.fa-comment
+        .header__button
+          = link_to "おやすみ", destroy_user_session_path, method: :delete
           %i.fa.fa-bed
         .header__message
           %p
@@ -25,4 +31,7 @@
           おかえりなさい。
           %br
           今日はどんな一日だった？
+          %br
+          %br
+          ジョンより
     = yield
