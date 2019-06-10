@@ -1,5 +1,9 @@
 class LettersController < ApplicationController
-def index
-end
+  def index
+    @letter = Letter.last
+  end
+
+  def new
+  end
 
 end
