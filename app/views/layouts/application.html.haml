@@ -14,7 +14,7 @@
       .header__image 
       - if user_signed_in?
         .header__button
-          = link_to "メェ〜ルする", destroy_user_session_path, method: :delete
+          = link_to "メェ〜ルする", new_letter_path, method: :get
           %i.fa.fa-envelope
         .header__button
           = link_to "マネージメェント", destroy_user_session_path, method: :delete
@@ -34,4 +34,9 @@
           %br
           %br
           ジョンより
+
+      -else
+        .header__copy
+          ーまいにち、あなたを、うけいれるー
+
     = yield
