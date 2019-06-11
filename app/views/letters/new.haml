@@ -1,0 +1,4 @@
+%body
+  = form_tag('/letters', method: :post) do
+    投稿する
+    %input{:placeholder => "今日達成した習慣を入力してください", :type => "text", :name => "habit"}
