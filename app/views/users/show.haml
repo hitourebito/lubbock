@@ -1,7 +1,7 @@
 %body
-  -@letters.each do |letter|
-    = letter.created_at
+  -@managements.each do |manage|
+    = manage.created_at
     %br
-    = letter.habit
+    = manage.habit
     %br
     %br
