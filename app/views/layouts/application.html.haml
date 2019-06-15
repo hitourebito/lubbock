@@ -17,7 +17,7 @@
           = link_to "メェ〜ルする", new_letter_path, method: :get
           %i.fa.fa-envelope
         .header__button
-          = link_to "マネージメェント", destroy_user_session_path, method: :delete
+          = link_to "マネージメェント", user_path(:id), method: :get
           %i.fa.fa-check-circle
         .header__button
           = link_to "ジョンのメェ〜言", destroy_user_session_path, method: :delete
@@ -34,9 +34,8 @@
           %br
           %br
           ジョンより
-
       -else
         .header__copy
-          ーまいにち、あなたを、うけいれるー
+          ー毎日、あなたを、受け入れるー
 
     = yield

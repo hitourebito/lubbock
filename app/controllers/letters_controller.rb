@@ -3,7 +3,8 @@ class LettersController < ApplicationController
   before_action :move_to_index, except: :index
 
   def index
-    @letters = Letter.last
+    @letters = current_user.letters.last
+    @friend_point = current_user.letters.count
   end
 
   def new
