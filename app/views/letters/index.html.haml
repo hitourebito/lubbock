@@ -1,9 +1,30 @@
 %body
-  = @letters.created_at
-  %br
-  = @letters.habit 
-  %br
-  = @letters.id
+  .index__body
+    .dayly__habit
+      - if @letters.id >= 1
+        %p
+          = @letters.created_at
+          %br
+          = @letters.habit
 
-  - if @letters.id > 5
-    頑張ってるね
+    .jon__message
+      - if @friend_point == 1
+        %p
+          →
+          =current_user.name
+          はじめまして！
+          これから、よろしくね。
+          ぼくの名前はジョンって言うんだ
+      
+      - if @friend_point >= 2 && @friend_point <= 4
+        %p
+          →
+          =current_user.name 
+          習慣を記録するのには慣れてきた？
+          君が送ってくれるメールはいつも美味しいよ！ムシャムシャ
+      
+      -if @friend_point == 5
+        %p
+          →
+          =current_user.name 
+          5回目の記録おめでとう！

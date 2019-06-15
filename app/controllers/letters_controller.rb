@@ -4,6 +4,7 @@ class LettersController < ApplicationController
 
   def index
     @letters = current_user.letters.last
+    @friend_point = current_user.letters.count
   end
 
   def new
